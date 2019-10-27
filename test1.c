@@ -3,6 +3,7 @@
  #define N 82
 //build a type of struct array
  struct stu{
+     char name[20];
      int score[6];
  }class[N];
 int inorder(struct stu *pclass);
