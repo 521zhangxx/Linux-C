@@ -32,6 +32,7 @@ int inorder(struct stu *pclass);
      //call this function that put them in order according sum of score
      inorder(class);
      //print the result
+     printf("order in the end: ");
      int b[N]={0,0,0,0,0,0,0,0,0,0};
      for(i=0;i<N;i++){
         for(j=0;j<6;j++){
@@ -43,14 +44,18 @@ int inorder(struct stu *pclass);
  }
  int inorder(struct stu *pclass){
      int i=0,j=0,q=0,tem=0;
-	 int a[N];
+     int a[N];
+
+     printf("order in the beginning: ");
      for(i=0;i<N;i++){
      	a[i]=0;
          for(j=0;j<6;j++){
              a[i]+=pclass[i].score[j];
          }
-		 printf("%d ",a[i]);
+	 //print the number before put in order
+	 printf("%d ",a[i]);
      }
+     printf("\n");
      printf("\n");
      struct stu temp;
      
